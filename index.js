@@ -1,9 +1,17 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let tempWord =[];
+  word.split('').forEach(c => {
+    tempWord.unshift(c)
+  });
+  return word === tempWord.join('')
 }
 
 /* 
   Add your pseudocode here
+  takes input
+  character comparison on reverse of letters
+  returns true or false
 */
 
 /*
